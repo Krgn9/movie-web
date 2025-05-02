@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Movie List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 My Movies</h1>
+
+    <form id="movie-form">
+      <input type="text" id="title" placeholder="Movie Title" required />
+      <input type="number" id="rating" placeholder="Rating (1-10)" min="1" max="10" required />
+      <input type="text" id="genre" placeholder="Genre" required />
+      <input type="file" id="poster" accept="image/*" />
+      <button type="submit">Add Movie</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Search movies..." />
+
+    <select id="sort">
+      <option value="default">Sort by</option>
+      <option value="title">Title</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <ul id="movie-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
