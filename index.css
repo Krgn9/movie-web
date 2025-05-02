@@ -1,0 +1,88 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  color: #e63946;
+  text-align: center;
+}
+
+form, #search, #sort {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input, select {
+  background: #222;
+  color: white;
+}
+
+button {
+  background-color: #1d3557;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #457b9d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #222;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 4px solid #e63946;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.poster {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.movie-details {
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+.actions button {
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #e63946;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+.actions button.edit {
+  background-color: #2a9d8f;
+}
